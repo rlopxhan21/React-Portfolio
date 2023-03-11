@@ -2,16 +2,16 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { theme } from './Theme/useTheme';
-import { HomePage } from './Pages/HomePage';
+import { DashboardPage } from './Pages/DashboardPage';
 
 import { ThemeProvider } from '@mui/material';
 
-function App() {
+const App: React.FC = () => {
+
   return <ThemeProvider theme={theme}>
     <Routes>
-      <Route path='/' element={<HomePage />} />
+      <Route path='/' element={<DashboardPage />} />
     </Routes>
-
   </ThemeProvider>
 }
 
